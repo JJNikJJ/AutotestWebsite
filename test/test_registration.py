@@ -8,7 +8,7 @@ def test_registration_positive(driver):
     registration_page = RegistrationPage(driver)
     registration_page.open("https://demowebshop.tricentis.com/register")
 
-    registration_page.register("Никита", "Бушуев", "nikitabushuev_new12345@test.com", "password123456", "password123456", "male")
+    registration_page.register("Никита1", "Бушуев1", "nikitabushuev_new123456@test.com", "password123456", "password123456", "male")
 
     WebDriverWait(driver, 10).until(EC.url_to_be("https://demowebshop.tricentis.com/registerresult/1"))
 
